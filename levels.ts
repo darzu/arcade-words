@@ -199,9 +199,9 @@ function finishGame() {
     ], () => game.over(true))
 }
 
-game.onUpdate(function () {
-    if (timeRemaining <= 0) {
-        game.splash("LIFE SUPPORT FAILED", "press a to restart")
-        restartGame();
-    }
-})
+// game.onUpdate(function () {
+//     if (timeRemaining <= 0) {
+//         game.splash("LIFE SUPPORT FAILED", "press a to restart")
+//         restartGame();
+//     }
+// })

@@ -18,7 +18,8 @@
         "message.ts",
         "cutscene.ts",
         "intro.ts",
-        "main.py"
+        "main.py",
+        "extension.ts"
     ],
     "palette": [
         "#000000",

@@ -10,14 +10,7 @@
         "main.ts",
         "README.md",
         "generateFrames.ts",
-        "holodeck.ts",
-        "hud.ts",
-        "button.ts",
-        "levels.ts",
-        "platformer.ts",
         "message.ts",
-        "cutscene.ts",
-        "intro.ts",
         "main.py",
         "extension.ts"
     ],
@@ -39,7 +32,7 @@
         "#91463d",
         "#000000"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "pyprj",
     "testFiles": [
         "test.ts"
     ]

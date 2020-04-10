@@ -1,0 +1,45 @@
+{
+    "name": "holodate",
+    "dependencies": {
+        "device": "*",
+        "color-coded-tilemap": "*",
+        "animation": "*"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md",
+        "generateFrames.ts",
+        "holodeck.ts",
+        "hud.ts",
+        "button.ts",
+        "levels.ts",
+        "platformer.ts",
+        "message.ts",
+        "cutscene.ts",
+        "intro.ts",
+        "main.py"
+    ],
+    "palette": [
+        "#000000",
+        "#ffffff",
+        "#73464c",
+        "#ab5675",
+        "#ee6a7c",
+        "#ffa7a5",
+        "#ffe07e",
+        "#ffe7d6",
+        "#72dcbb",
+        "#34acba",
+        "#8e2ec4",
+        "#a4839f",
+        "#5c406c",
+        "#e5cdc4",
+        "#91463d",
+        "#000000"
+    ],
+    "preferredEditor": "tsprj",
+    "testFiles": [
+        "test.ts"
+    ]
+}

@@ -32,7 +32,7 @@
         "#91463d",
         "#000000"
     ],
-    "preferredEditor": "pyprj",
+    "preferredEditor": "tsprj",
     "testFiles": [
         "test.ts"
     ]

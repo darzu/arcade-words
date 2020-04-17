@@ -1,15 +1,12 @@
 {
     "name": "holodate",
     "dependencies": {
-        "device": "*",
-        "color-coded-tilemap": "*",
-        "animation": "*"
+        "device": "*"
     },
     "description": "",
     "files": [
         "main.ts",
         "README.md",
-        "generateFrames.ts",
         "message.ts",
         "main.py",
         "extension.ts"

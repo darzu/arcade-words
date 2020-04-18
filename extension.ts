@@ -90,5 +90,11 @@ namespace words {
         wordSpeed = speed;
     }
 
-    
+    //% block="wait $time"
+    //% time.defl=500
+    //% handlerStatement=1
+    //% %time=timePicker ms"
+    export function wait(time: number, thenDo: () => void) {
+        setTimeout(thenDo, time)
+    }
 }

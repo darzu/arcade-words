@@ -97,4 +97,11 @@ namespace words {
     export function wait(time: number, thenDo: () => void) {
         setTimeout(thenDo, time)
     }
+
+    export function background(then: () => void) {
+        // TODO
+        //% block="do"
+        //% handlerStatement=1
+        control.runInBackground(then)
+    }
 }

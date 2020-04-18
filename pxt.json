@@ -1,5 +1,5 @@
 {
-    "name": "holodate",
+    "name": "words",
     "dependencies": {
         "device": "*"
     },

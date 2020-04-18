@@ -52,15 +52,17 @@ namespace words {
     //% bubble.shadow=variables_get
     //% bubble.defl=bubble
     //% sprite.shadow=variables_get
-    //% sprite.defl=sprite
+    //% sprite.defl=mySprite
     //% group="Words" weight=50 blockGap=8 
     export function setAnchorSprite(bubble: word.Bubble, sprite: Sprite) {
         bubble.setAnchorSprite(sprite);
     }
 
-    //% block="position $bubble at x $x y $y"
+    //% block="position $bubble at x %x y %y"
     //% bubble.shadow=variables_get
     //% bubble.defl=bubble
+    //% help=sprites/sprite/set-position
+    //% x.shadow="positionPicker" y.shadow="positionPicker"
     //% group="Words" weight=50 blockGap=8 
     export function setAnchor(bubble: word.Bubble, x: number, y: number) {
         bubble.setAnchor(x, y)

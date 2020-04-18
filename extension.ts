@@ -3,12 +3,14 @@
 //% color=#29918a icon="\uf27b"
 //% groups='["Words"]'
 namespace words {
+    let wordSpeed = word.TextSpeed.Medium;
+
     /**
      * Create a word bubble
      */
     //% blockId=create_word_bubble
     //% block="new word bubble"
-    //% blockSetVariable=myWordBubble
+    //% blockSetVariable=bubble
     //% group="Words" weight=50 blockGap=8 
     export function createWordBubble(): word.Bubble {
         return new word.Bubble();
@@ -20,7 +22,7 @@ namespace words {
     //% handlerStatement=1
     //% group="Words" weight=50 blockGap=8 
     export function sayThen(bubble: word.Bubble, lines: string[], onEnd: () => void) {
-        let ls = lines.map(l => word.line(l, word.TextSpeed.Medium))
+        let ls = lines.map(l => word.line(l, wordSpeed))
         bubble.startMessage([
             new word.MessagePage(ls)
         ], onEnd);
@@ -33,6 +35,17 @@ namespace words {
     //% group="Words" weight=50 blockGap=8 
     export function say(bubble: word.Bubble, lines: string[]) {
         sayThen(bubble, lines, () => {})
+    }
+
+    export function spriteSay(sprite: Sprite, lines: string[]) {
+        // NOTE: disabled because redundant
+        //% block="$sprite say $lines"
+        //% sprite.shadow=variables_get
+        //% sprite.defl=mySprite
+        //% group="Words" weight=50 blockGap=8 
+        let bubble = createWordBubble();
+        setAnchorSprite(bubble, sprite);
+        sayThen(bubble, lines, () => { })
     }
 
     //% block="attach $bubble to $sprite"
@@ -67,6 +80,12 @@ namespace words {
     //% group="Words" weight=50 blockGap=8 
     export function setColors(fg: number, bg: number) {
         word.setColors(fg, bg);
+    }
+
+    //% block="set word speed $speed"
+    //% group="Words" weight=50 blockGap=8 
+    export function setWordSpeed(speed: word.TextSpeed) {
+        wordSpeed = speed;
     }
 
     

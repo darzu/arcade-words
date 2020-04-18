@@ -98,10 +98,10 @@ namespace words {
         setTimeout(thenDo, time)
     }
 
+    // TODO
+    //% block="start story"
+    //% handlerStatement=1
     export function background(then: () => void) {
-        // TODO
-        //% block="do"
-        //% handlerStatement=1
         control.runInBackground(then)
     }
 }

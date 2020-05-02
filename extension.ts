@@ -2,7 +2,7 @@
 
 //% color=#29918a icon="\uf27b"
 //% groups='["Words"]'
-namespace words {
+namespace story {
     let wordSpeed = word.TextSpeed.Medium;
 
     /**
